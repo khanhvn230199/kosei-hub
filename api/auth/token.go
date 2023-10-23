@@ -20,7 +20,7 @@ func GenerateJWT(user models.User) (string, error) {
 	claim := models.Claim{
 		User: user,
 		StandardClaims: jwt.StandardClaims{
-			Issuer:    "Alfredo Mendoza",
+			Issuer:    "kosei-hub",
 			ExpiresAt: time.Now().Add(time.Hour * 24).Unix(),
 		},
 	}
